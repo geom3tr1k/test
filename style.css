@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    background: url(img/background.png) no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+div h1{
+    width: 552px;
+    font-size: 50px;
+}
+p{
+    width: 500px;
+}
+div{
+    margin: 0 auto;
+    width: 800px;
+}
+button{
+
+    background: darkgoldenrod;
+    font-size: 30px;
+    color: white;
+    border: none;
+    padding: 18px 100px;
+}
