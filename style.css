@@ -1,38 +1,155 @@
-body{
-    height: 100vh;
-    background: url(img/background.png) no-repeat;
-    background-size: cover;
-    color: white;
-    font-family: "Arial", sans-serif;
-}
-header{
+body {
+    background-color: #101010;
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .menu {
+    max-width: 1200px;
     display: flex;
-    justify-content: space-around;
-}
-ul{
-    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+  }
+ .menu a {
+    text-decoration: none;
     list-style: none;
-    gap: 50px;
-    font-size: 32px;
-    text-transform: uppercase;
+    color: #ffffff;
+    font-size: x-large;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .novinki {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    background-color: #777;
+  }
+  .novinki h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+ 
+    .card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #777;
+    line-height: 1.4;
+  }
+
+.card {
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  position: relative; 
+  border: 1px solid #000000;
+
+  
+ }
+ .product,
+.description {
+ width: 100%; 
+ height: 100%; 
+ position: absolute; 
+ left: 0;
+ top: 0; 
+ text-align: center;
+ background-color: #fff;
 }
 
-div h1{
-    width: 552px;
-    font-size: 50px;
-}
-p{
-    width: 500px;
-}
-div{
-    margin: 0 auto;
-    width: 800px;
-}
-button{
 
-    background: darkgoldenrod;
-    font-size: 30px;
-    color: white;
-    border: none;
-    padding: 18px 100px;
+.product,
+.description {
+ backface-visibility: hidden;
+}
+.description {
+  box-sizing: border-box;
+  padding: 40px;
+  transform: rotateY(
+    180deg
+  ); 
+ }
+ .product,
+.description {
+ transition: 1s;
+}
+.card:hover .product {
+  transform: rotateY(180deg); 
+ }
+ .card:hover .description {
+  transform: rotateY(360deg); 
+ }
+
+ .description a {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #732222;
+  background-color: #f5dde1;
+    cursor: pointer;
+ }
+ 
+ .nadpic h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.car {
+  background-color: #777;
+}
+
+.car_one {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+
+.img_car {
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px; 
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0; 
+  transition: opacity 0.5s ease;
+  color: #ffffff;
+}
+
+.car_one:hover .caption {
+  opacity: 1; 
+}
+.opis {
+  color: #ffffff;
+  text-align: center;
+  font-size: larger;
 }
